@@ -61,6 +61,7 @@ class StatusesController < ApplicationController
     end
   end
 
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_status
@@ -69,6 +70,8 @@ class StatusesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def status_params
-      params.require(:status).permit(:name, :content)
+      if (params[:status])
+        params.require(:status).permit(:name, :content, :user_id)
+      end
     end
 end
