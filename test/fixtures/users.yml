@@ -4,3 +4,8 @@ jason:
   email: "jason@teamtreehouse.com"
   profile_name: "jasonseifer"
 
+jared:
+  first_name: "Jared"
+  last_name: "Derp"
+  email: "derpy@derpy.com"
+  profile_name: "derpalerpa"
